@@ -16,14 +16,20 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding: 32px;
-    background-color: #d5d5df;
+    background-color: #1d1dc6;
     color: #fff;
     border-bottom: 4px solid #fdb347;
 }
 
 .gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     padding: 20px 10px;
+    gap: 1rem;
 }
 
 .gallery img {
@@ -32,4 +38,29 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media (min-width : 768px){
+    
+    .gallery {
+        flex-direction: row;
+        background-image : url("raspitas.jpg");
+    }
+    .gallery img{
+        /* height: auto; */
+        /* width: 100%; */
+    }
+}
+
+@media (min-width : 992px){
+    
+    .gallery{
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        /* grid-column: 1/span 3; */
+        /* background-image : url("raspitas.jpg"); */
+    }
+    .gallery img {
+        max-width: initial;
+    }
 }
