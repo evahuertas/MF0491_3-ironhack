@@ -8,6 +8,18 @@
 
 function loveDifference(age1, age2) {
 
+    let diferenciaEdad;
+
+    if (age1 > age2){
+        diferenciaEdad = age1 - age2
+    }else if(age2 > age1){
+        diferenciaEdad = age2 - age1
+    }else{
+        diferenciaEdad = 0
+    }
+
+    return diferenciaEdad
+
 }
 
 // Prueba 1: Diferencia básica
