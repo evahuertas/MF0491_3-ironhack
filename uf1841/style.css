@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 a {
     text-decoration: none;
@@ -11,12 +13,31 @@ a {
 
 div {
     width: fit-content;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    margin-bottom: 20px;
 }
 
-.danger {}
+.danger {
+    background-color: #ffdddd;
+    border-left: #f44336 8px solid;
+}
 
-.success {}
+.success {
+    background-color: #ddffdd;
+    border-left: #04AA6D 8px solid;
+}
 
-.info {}
+.info {
+    background-color: #e7f3fe;
+    border-left: #2196F3 8px solid;
+}
 
-.warning {}
+.warning {
+    background-color: #ffffcc;
+    border-left: #ffeb3b 8px solid;
+    position: relative;
+}
+img{
+    position: absolute;
+}
